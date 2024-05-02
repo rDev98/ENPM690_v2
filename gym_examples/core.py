@@ -33,7 +33,6 @@ def custom_make(env_id: str, terrain_image_name: str):
     xml_name = env_xml_dict[env_id]
     assets_xml_path = get_assets_xml_abs_path(xml_name)
 
-    # 編集するのは/tmp以下のXMLファイル
     tmp_xml_path = os.path.join("/tmp", xml_name)
     shutil.copyfile(assets_xml_path, tmp_xml_path)
 
