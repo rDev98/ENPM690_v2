@@ -34,7 +34,7 @@ def custom_make(env_id: str, terrain_image_name: str):
     assets_xml_path = get_assets_xml_abs_path(xml_name)
 
     tmp_xml_path = os.path.join("/tmp", xml_name)
-    shutil.copyfile("gym_examples/envs/assets/scene_mjx.xml", tmp_xml_path)
+    shutil.copyfile("/envs/assets/scene_mjx.xml", tmp_xml_path)
 
     tmp_xml_file = Et.parse(tmp_xml_path)
     root = tmp_xml_file.getroot()
